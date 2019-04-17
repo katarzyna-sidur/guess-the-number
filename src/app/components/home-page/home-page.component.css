@@ -1,0 +1,104 @@
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 46px;
+    color: rgb(28, 117, 146);
+    letter-spacing: 5px;
+    animation: animate .7s infinite;
+    width: 100%;
+}
+
+div.container-fluid {
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+}
+
+div.main-container {
+    background-color: rgb(176, 223, 238);
+    width: 70%;
+    border-radius: 20%;
+    height: auto;
+    overflow: hidden;
+    margin: 80px auto;
+}
+
+div.content {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+div.row {
+    margin: 2% 0;
+}
+
+p.description { 
+    line-height: 2;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+button.choose-level {
+    background-color: rgb(53, 135, 162);
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 3%;
+    padding: 4%;
+    width: 70%;
+    font-family: 'Bangers', cursive;
+    font-size:20px;
+    letter-spacing: 2px;
+    transition: width 0.1s ease-in-out;
+}
+
+button.choose-level:hover {
+    width: 100%;
+    background-color: rgb(124, 193, 216);
+}
+
+i.fas.fa-question {
+    font-size: 80px;
+    color: rgb(28, 117, 146);
+    margin-top:60px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+i.fas.fa-question.two {
+    animation-name: spin2;
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
