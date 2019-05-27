@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="main-container">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> Zgadnij liczbę !</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="level">Poziom {{level}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="description">
+                        Zgadnij liczbę z przedziału: <b>{{range}}</b> !
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <input class="form-control number" type="text" placeholder="Wpisz liczbę"
+                        [(ngModel)]="randomNumber">
+                </div>
+                <div class="col-md-4">
+                    <button class="check" (click)="check()">Sprawdź</button>
+                </div>
+            </div>
+            <div class="sorce" *ngIf="gameStarted === true">
+                <div class="resoult" *ngIf="tooLess === true"> <i class="fas fa-frown"></i> Liczba za mała. Spróbuj jeszcze raz.</div>
+                <div class="resoult" *ngIf="tooMuch === true"> <i class="fas fa-frown"></i> Liczba za duża. Spróbuj jeszcze raz.</div>
+                <div class="resoult" *ngIf="win === true"> <i class="fas fa-smile-beam"></i>Wygrałeś !!! Udało się za {{click}} podejściem.</div>
+                <div class="countclicks">Liczba prób: <b>{{click}}</b></div>
+                <div class="row"  *ngIf="win === true"> 
+                   <div class="col-md-12">
+                        <button class="check" (click)="goBack()">Powrót</button>
+                   </div>   
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>

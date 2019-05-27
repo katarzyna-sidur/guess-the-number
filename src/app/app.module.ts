@@ -4,23 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { TemplateComponent } from './components/template/template.component';
-import { LevelOneComponent } from './components/level-one/level-one.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { GamePageComponent } from './components/game-page/game-page.component';
+
 
 const appRoutes: Routes = [
     { path: 'home', component: HomePageComponent },
-    { path: 'levelone', component: LevelOneComponent },
+    { path: 'game', component: GamePageComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    TemplateComponent,
-    LevelOneComponent,
-    HomePageComponent
+    HomePageComponent,
+    GamePageComponent
   ],
   imports: [
     BrowserModule,

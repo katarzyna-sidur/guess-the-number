@@ -78,3 +78,27 @@ input.number {
     margin-top:6px;
     border-radius: 20px;
 }
+div.sorce {
+    margin-top:5%;
+}
+i.fas.fa-frown {
+    color: red;
+    padding-right: 6px;
+}
+
+i.fas.fa-smile-beam{
+    color:green;
+     padding-right: 6px;
+}
+
+div.resoult {
+    font-size:24px;
+    font-family: 'Bangers', cursive;
+    padding: 2%;
+    background-color: rgb(124, 193, 216);
+    border-radius: 20px;
+}
+
+div.countclicks {
+    margin-top:5px;
+}
